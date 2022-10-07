@@ -1,8 +1,8 @@
-import 'package:d3f_inapp_purchase/app_global_binding.dart';
+import 'package:d3f_inapp_purchase/app/app_global_binding.dart';
 import 'package:d3f_inapp_purchase/routes/links.dart';
 import 'package:d3f_inapp_purchase/routes/middle_ware.dart';
 import 'package:d3f_inapp_purchase/routes/routes.dart';
-import 'package:d3f_inapp_purchase/translations.dart';
+import 'package:d3f_inapp_purchase/app/translations.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       fallbackLocale: const Locale('vi', 'VI'),
       initialBinding: InAppPurchaseGlobalBinding(),
       initialRoute: InAppPurchaseAppLinks.splash,
-      routingCallback: (routing) => InAppPurchaseMiddleWare.observer,
+      routingCallback: (routing) => InAppPurchaseMiddleWare.observer(routing),
       getPages: InAppPurchaseAppRoutes.pages,
     );
   }
