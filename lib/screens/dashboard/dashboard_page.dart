@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:d3f_core/screens/base/base_view.dart';
 import 'package:flutter/material.dart';
 
