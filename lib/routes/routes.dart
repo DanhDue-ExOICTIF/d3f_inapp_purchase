@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:d3f_inapp_purchase/screens/dashboard/dashboard_binding.dart';
 import 'package:d3f_inapp_purchase/screens/dashboard/dashboard_page.dart';
 import 'package:d3f_inapp_purchase/screens/splash/splash_binding.dart';
