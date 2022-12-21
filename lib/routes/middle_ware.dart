@@ -1,6 +1,6 @@
-// ignore_for_file: depend_on_referenced_packages
+// ignore_for_file: depend_on_referenced_packages, library_prefixes
 
-import 'package:d3f_login/app/routes/links.dart';
+import 'package:d3f_login/app/routes/app_pages.dart' as loginPages;
 import 'package:fimber/fimber.dart';
 import 'package:get/get.dart';
 
@@ -12,7 +12,7 @@ class InAppPurchaseMiddleWare extends GetMiddleware {
       case InAppPurchaseAppLinks.tokenIsExpired:
         {
           Fimber.d('MiddleWare.observer() - AppLinks.tokenIsExpired');
-          Get.offNamed(LoginAppLinks.login);
+          Get.offNamed(loginPages.Routes.LOGIN);
           break;
         }
       case InAppPurchaseAppLinks.splash:
